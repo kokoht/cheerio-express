@@ -1,0 +1,33 @@
+{
+  "name": "cheerio-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokoht/cheerio-express.git"
+  },
+  "author": "Kokoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kokoht/cheerio-express/issues"
+  },
+  "homepage": "https://github.com/kokoht/cheerio-express#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.83.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "fb": "^2.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "nodemon": "^1.11.0",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.4"
+  }
+}
