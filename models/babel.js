@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var papuaSchema = new Schema({
+var babelSchema = new Schema({
   title: {
     type: String,
   },
@@ -25,6 +25,6 @@ var papuaSchema = new Schema({
   }
 })
 
-let papua = mongoose.model('papua', papuaSchema)
+let babel = mongoose.model('babel', babelSchema)
 
-module.exports = papua
+module.exports = babel

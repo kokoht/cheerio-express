@@ -56,8 +56,6 @@ const cors = require('cors')
 // })
 
 
-
-
 app.use(bodyParser.urlencoded({ extended:false }));
 app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/*+json' }))
@@ -65,14 +63,15 @@ app.use(bodyParser.json({type: 'application/x-www-form-urlencoded'}))
 
 app.use(cors());
 
-// matiin dulu
 const papua = require('./routes/papua')
+const babel = require('./routes/babel')
 
 app.get('/', function(req,res){
   res.send('express is listening')
 })
 
 app.use('/papua', papua)
+app.use('/babel', babel)
 
 
 app.listen(3000)
